@@ -135,7 +135,6 @@ def insert_data_into_db(payload):
         connection.commit()
     finally:
         connection.close()
-    raise NotImplementedError("Database insert function not implemented.")
 
 #Database Function Stub
 def fetch_data_from_db():
@@ -169,7 +168,6 @@ def fetch_data_from_db():
         return result
     finally:
         connection.close()
-    raise NotImplementedError("Database fetch function not implemented.")
 
 if __name__ == '__main__':
     application.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
